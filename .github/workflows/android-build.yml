@@ -31,11 +31,11 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Install EAS CLI
-        run: npm install -g eas-cli@latest
+        run: npm install --legacy-peer-deps -g eas-cli@latest
 
       - name: Install dependencies
         working-directory: ./frontend
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Update API configuration
         working-directory: ./frontend
