@@ -1,0 +1,3 @@
+// File: frontend/package.json
+
+export default function placeholder() { return null; }
