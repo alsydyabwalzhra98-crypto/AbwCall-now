@@ -1,8 +1,5 @@
-modules:
-  - name: expo-app
-    language: javascript
-run: npm start
-entrypoint: npm start
+run: bash -c "npm install && expo start --web"
+entrypoint: expo
 hidden:
   - .expo
   - node_modules
