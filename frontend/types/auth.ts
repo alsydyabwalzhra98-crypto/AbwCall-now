@@ -1,3 +1,26 @@
-// File: frontend/types/auth.ts
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  phone?: string;
+  avatar?: string;
+  balance: number;
+  createdAt: string;
+  updatedAt: string;
+}
 
-export default function placeholder() { return null; }
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
+export interface SignupRequest {
+  name: string;
+  email: string;
+  password: string;
+}
+
+export interface AuthResponse {
+  user: User;
+  token: string;
+}

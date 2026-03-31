@@ -1,3 +1,7 @@
-// File: frontend/babel.config.js
-
-export default function placeholder() { return null; }
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: ['react-native-reanimated/plugin'],
+  };
+};

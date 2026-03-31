@@ -1,3 +1,23 @@
-// File: frontend/types/contact.ts
+export interface Contact {
+  id: string;
+  name: string;
+  phone: string;
+  email?: string;
+  avatar?: string;
+  isFavorite?: boolean;
+  createdAt: string;
+  updatedAt: string;
+}
 
-export default function placeholder() { return null; }
+export interface CreateContactRequest {
+  name: string;
+  phone: string;
+  email?: string;
+}
+
+export interface UpdateContactRequest {
+  name?: string;
+  phone?: string;
+  email?: string;
+  isFavorite?: boolean;
+}

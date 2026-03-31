@@ -1,3 +1,21 @@
-// File: frontend/types/call.ts
+export interface CallRecord {
+  id: string;
+  phoneNumber: string;
+  status: 'ongoing' | 'completed' | 'missed' | 'failed';
+  duration: number; // in seconds
+  cost: number;
+  startedAt: string;
+  endedAt?: string;
+  createdAt: string;
+}
 
-export default function placeholder() { return null; }
+export interface CallRate {
+  country: string;
+  countryCode: string;
+  rate: number; // per minute
+  currency: string;
+}
+
+export interface CallRequest {
+  phoneNumber: string;
+}

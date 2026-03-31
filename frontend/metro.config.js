@@ -1,3 +1,6 @@
-// File: frontend/metro.config.js
+const { getDefaultConfig } = require('expo/metro-config');
+const path = require('path');
 
-export default function placeholder() { return null; }
+const config = getDefaultConfig(__dirname);
+
+module.exports = config;
